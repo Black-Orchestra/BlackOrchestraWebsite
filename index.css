@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri';
+}
+
+body {
+    line-height: 1.0;
+    min-height: var(--viewport-height);
+    min-width: 320px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    background: #000000;
+}
+
+.void {
+    
+    position: fixed;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.textContainer{
+    font-size: 2rem;
+    color: aliceblue;
+}
+
+.imageContainer video{
+    height: 100%;
+    width: 100%;
+}
+
