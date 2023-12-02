@@ -10,9 +10,10 @@ html, body {
 }
 
 body {
-	background-color: #1d1d1a;
+	background-color: #000000;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .main {
@@ -26,7 +27,7 @@ body {
 }
 
 .banner img {
-    width: 100em;
+    min-width: 20em;
 }
 
 .containerStyle1 {
@@ -43,6 +44,7 @@ body {
     border-width: 1px;
     border-radius: 0.75rem;
     margin-bottom: 20px;
+    max-width: 90%; /* Width of the container will update with the size of screen*/
 }
 
 .containerStyle1 img {
@@ -71,4 +73,24 @@ body {
     border: 1px solid rgba(255,255,255,0.271); /* Set border properties */
     width: 100%;
     margin: 0px; /* Adjust margin as needed */
+}
+
+/* Specific settings to help with mobile devices*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    /* Styles for screens up to 600px wide */
+    .containerStyle1 {
+        width: 100%;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .boxWrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
