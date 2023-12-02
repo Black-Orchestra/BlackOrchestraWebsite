@@ -1,3 +1,19 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 1;
+    z-index: 9999;
+    transition: opacity 1s ease, display 0s 1s;
+}
+
+.fade-out .overlay {
+    opacity: 0;
+}
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -5,11 +21,12 @@ html, body {
 	height: 100%;
  
 	font-size: 12px;
-	color: #C0C0C0;
+	color: #000000;
 	font-family: Verdana, sans-serif;
 }
 
 body {
+    background-image:url('Background.png');
 	background-color: #000000;
 	background-attachment: fixed;
 	background-size: cover;
@@ -49,6 +66,26 @@ body {
 
 .MediaWrapper img:hover {
     transform: scale(1.2);
+}
+
+.MediaWrapper a {
+    position: relative;
+}
+
+.MediaWrapper .description {
+    display: none;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%); /* center */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.MediaWrapper a:hover .description {
+    display: block;
 }
 
 .containerStyle1 {

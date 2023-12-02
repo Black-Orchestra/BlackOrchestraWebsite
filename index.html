@@ -9,6 +9,22 @@
 <meta content="https://files.catbox.moe/eryd34.png" property="twitter:image" />
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 
+<!-- JavaScript craps -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+			document.body.classList.add('fade-out');
+			
+			// Remove the overlay after fading in
+			var overlay = document.querySelector('.overlay');
+            overlay.addEventListener('transitionend', function () {
+                overlay.remove();
+            });  
+        }, 0); // Adjust the delay in milliseconds
+    });
+</script>
+
+
 <html class="htmlClass">
     <head>
         <meta charset="UTF-8">
@@ -19,7 +35,8 @@
             href="https://cdn.discordapp.com/attachments/1021478767165710379/1179996324704305222/black_orchestra_discord_black.png">
     </head>
 
-    <body style="background-image:url('Background.png')" onload="">
+    <body onload="">
+		<div class="overlay"></div>
             <div class="main">
                 <p class="banner">
                     <img src="https://cdn.discordapp.com/attachments/977351461346349116/1166185762807631972/black_orchestra_logo.png">
@@ -28,13 +45,16 @@
                 <div class="MediaWrapper">
 
                     <a href="https://www.moddb.com/mods/black-orchestra37-54">
-                        <img src = "ModDB.svg" alt="ModDB"/></a>
+                        <img src = "ModDB.svg" alt="ModDB"/>
+						<span class="description">Visit ModDB</span></a>
 
                     <a href="https://www.youtube.com/@BlackOrchestraWorldfront37-54">
-                        <img src = "Youtube.svg" alt="Youtube"/></a>
+                        <img src = "Youtube.svg" alt="Youtube"/>
+						<span class="description">Visit Youtube</span></a>
 
                     <a href="https://discord.gg/black-orchestra-worldfront-37-54-680126209752825867">
-                        <img src = "Discord.svg" alt="Youtube"/></a>
+                        <img src = "Discord.svg" alt="Youtube"/>
+						<span class="description">Join Discord</span></a>
                         
                 </div>
 
