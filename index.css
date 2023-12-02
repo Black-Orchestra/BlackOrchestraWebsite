@@ -12,8 +12,9 @@ html, body {
 body {
 	background-color: #000000;
 	background-attachment: fixed;
-	background-size: contain;
+	background-size: cover;
     background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
 }
 
 .main {
@@ -28,6 +29,26 @@ body {
 
 .banner img {
     min-width: 20em;
+}
+
+.MediaWrapper {
+    min-width: 50%;
+    min-height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10rem
+}
+
+.MediaWrapper img {
+    width: 70px;
+    padding-inline: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.MediaWrapper img:hover {
+    transform: scale(1.2);
 }
 
 .containerStyle1 {
@@ -54,7 +75,13 @@ body {
     width: 40rem;
     --padding-horizontal: 1.5rem;
     --padding-vertical: 3rem;
-    --spacing: 3rem;
+}
+
+.containerStyle1 iframe {
+    background: #000; 
+    border: none;
+    height: 40rem;
+    width:30rem;
 }
 
 .boxWrapper {
