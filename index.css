@@ -26,7 +26,7 @@ html, body {
 }
 
 body {
-    background-image:url('Background.png');
+    background-image:url('images/Background.png');
 	background-color: #000000;
 	background-attachment: fixed;
 	background-size: cover;
@@ -45,6 +45,8 @@ body {
 }
 
 .banner img {
+    margin-top:40%;
+    margin-bottom:40%;
     min-width: 20em;
 }
 
