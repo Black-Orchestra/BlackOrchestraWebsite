@@ -80,10 +80,12 @@ body {
     bottom: -100%;
     left: 50%;
     transform: translateX(-50%); /* center */
-    background-color: #333;
+    background-color: #202020;
     color: #fff;
     padding: 10px;
+    width: 5rem;
     border-radius: 10px;
+    text-align: center
 }
 
 .MediaWrapper a:hover .description {
