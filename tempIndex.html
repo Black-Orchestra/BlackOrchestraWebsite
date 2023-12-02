@@ -4,10 +4,26 @@
 <meta content="Black Orchestra: World Front for Rising Storm 2" property="og:title" />
 <meta name="twitter:card" content="summary_large_image">
 <meta content="http://www.blackorchestra.net/" property="og:url" />
-<meta content="https://files.catbox.moe/eryd34.png" property="image_src" />
-<meta content="https://files.catbox.moe/eryd34.png" property="og:image" />
-<meta content="https://files.catbox.moe/eryd34.png" property="twitter:image" />
+<meta content="https://files.catbox.moe/c2e2dq.png" property="image_src" />
+<meta content="https://files.catbox.moe/c2e2dq.png" property="og:image" />
+<meta content="https://files.catbox.moe/c2e2dq.png" property="twitter:image" />
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+
+<!-- JavaScript craps -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+			document.body.classList.add('fade-out');
+			
+			// Remove the overlay after fading in
+			var overlay = document.querySelector('.overlay');
+            overlay.addEventListener('transitionend', function () {
+                overlay.remove();
+            });  
+        }, 0); // Adjust the delay in milliseconds
+    });
+</script>
+
 
 <html class="htmlClass">
     <head>
@@ -19,7 +35,8 @@
             href="https://cdn.discordapp.com/attachments/1021478767165710379/1179996324704305222/black_orchestra_discord_black.png">
     </head>
 
-    <body style="background-image:url('Background.png')" onload="">
+    <body onload="">
+		<div class="overlay"></div>
             <div class="main">
                 <p class="banner">
                     <img src="https://cdn.discordapp.com/attachments/977351461346349116/1166185762807631972/black_orchestra_logo.png">
@@ -28,13 +45,16 @@
                 <div class="MediaWrapper">
 
                     <a href="https://www.moddb.com/mods/black-orchestra37-54">
-                        <img src = "ModDB.svg" alt="ModDB"/></a>
+                        <img src = "ModDB.svg" alt="ModDB"/>
+						<span class="description">Visit ModDB</span></a>
 
                     <a href="https://www.youtube.com/@BlackOrchestraWorldfront37-54">
-                        <img src = "Youtube.svg" alt="Youtube"/></a>
+                        <img src = "Youtube.svg" alt="Youtube"/>
+						<span class="description">Visit Youtube</span></a>
 
                     <a href="https://discord.gg/black-orchestra-worldfront-37-54-680126209752825867">
-                        <img src = "Discord.svg" alt="Youtube"/></a>
+                        <img src = "Discord.svg" alt="Youtube"/>
+						<span class="description">Join Discord</span></a>
                         
                 </div>
 
@@ -53,7 +73,7 @@
                         <p> Welcome to the official Black Orchestra: World Front website </p>
                         <p> I created this website so that we could have an embed for our ModDB competition as a gag. But then I realized, if I come to this length,
                             spent actual money on a domain and time sorting all of this out, why shouldn't I do something greater? </p>
-                        <p> Anyway, all of us at the Black Orchestra development team have thought that this is a fun idea, and also an opportunity to be more serious in our development.
+                        <p> Anyway, all of us at the Black Orchestra development team have thought that this was a fun idea, and also an opportunity to be more serious in our development.
                             We'll see what we can do with this website in the future. Maybe... this place will benefit as a development blog. </p>
                         <img src="https://files.catbox.moe/turr6a.PNG">
                         <p> As a starter, here's the German M40 field coat I made a while ago. Well... I guess that's all I'm willing to share. I'm not a blogger. - Hoover </p>
