@@ -57,7 +57,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10rem
 }
 
 .MediaWrapper img {
@@ -72,24 +71,66 @@ body {
 
 .MediaWrapper a {
     position: relative;
+    display: inline-block;
+}
+
+.Title {
+    color: #fff;
+    font-size: 5rem;
 }
 
 .MediaWrapper .description {
-    display: none;
-    position: absolute;
-    bottom: -100%;
-    left: 50%;
-    transform: translateX(-50%); /* center */
+    position: relative;
     background-color: #202020;
     color: #fff;
+    margin: 1rem;
     padding: 10px;
     width: 5rem;
     border-radius: 10px;
-    text-align: center
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-.MediaWrapper a:hover .description {
+.MediaWrapper a:hover + .description {
     display: block;
+    opacity: 1;
+}
+
+.MediaItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.WidgetWrapper {
+    display:flex;
+    flex-direction: row;
+    width: 80rem;
+    max-width: 80%;
+    height:4rem;
+    margin-bottom:1rem;
+}
+
+.Widget {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #202020;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+    width: 5rem;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.1s ease;
+}
+
+.Widget:hover {
+    background-color: #878787;
 }
 
 .containerStyle1 {
@@ -132,6 +173,18 @@ body {
     display:flex;
     justify-content: normal;
     flex-direction: column; /* Set flex-direction to column */
+	align-items: center;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+.rowWrapper { /* Copy of boxWrapper with minor changes*/
+    padding-top:10px;
+    padding-bottom:10px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
 	align-items: center;
     color: aliceblue;
     font-size: 1.5rem;
