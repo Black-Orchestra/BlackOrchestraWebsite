@@ -215,3 +215,10 @@ img {
         padding-bottom: 20px;
     }
 }
+
+.copyright {
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.5;
+    margin: 2rem;
+}
