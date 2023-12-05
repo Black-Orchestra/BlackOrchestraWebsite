@@ -13,81 +13,95 @@
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         setTimeout(function () {
-			document.body.classList.add('fade-out');
-			
-			// Remove the overlay after fading in
-			var overlay = document.querySelector('.overlay');
+            document.body.classList.add('fade-out');
+
+            // Remove the overlay after fading in
+            var overlay = document.querySelector('.overlay');
             overlay.addEventListener('transitionend', function () {
                 overlay.remove();
-            });  
+            });
         }, 0); // Adjust the delay in milliseconds
     });
 </script>
 
 
 <html class="htmlClass">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Black Orchestra: World Front </title>
-        <link rel="stylesheet" href="index.css">
-        <link rel="icon"
-            href="https://cdn.discordapp.com/attachments/1021478767165710379/1179996324704305222/black_orchestra_discord_black.png">
-    </head>
 
-    <body onload="">
-		<div class="overlay"></div>
-            <div class="main">
-                <p class="banner">
-                    <img src="images/black_orchestra_logo.png">
-                </p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Black Orchestra: World Front </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon"
+        href="https://cdn.discordapp.com/attachments/1021478767165710379/1179996324704305222/black_orchestra_discord_black.png">
+</head>
 
-                <div class="MediaWrapper">
-                    <div class="MediaItem">
-                        <a href="https://www.moddb.com/mods/black-orchestra37-54">
-                            <img src="icons/ModDB.svg" alt="ModDB" /> </a>
-                        <span class="description">Visit ModDB</span>
-                    </div>
-                    <div class="MediaItem">
-                        <a href="https://www.youtube.com/@BlackOrchestraWorldfront37-54">
-                            <img src="icons/Youtube.svg" alt="Youtube" /> </a>
-                        <span class="description">Visit Youtube</span>
-                    </div>
-                    <div class="MediaItem">
-                        <a href="https://discord.gg/black-orchestra-worldfront-37-54-680126209752825867">
-                            <img src="icons/Discord.svg" alt="Youtube" /> </a>
-                        <span class="description">Join Discord</span>
-                    </div>
-                </div>
+<body onload="">
+    <div class="overlay"></div>
+    <div class="main">
+        <p class="banner">
+            <img src="images/black_orchestra_logo.png">
+        </p>
 
-                <!-- <h1 class="Title"> Home </h1> -->
-
-                <div class="containerStyle1" id="Container1"> <!-- Blog1 -->
-                    <div class="boxWrapper">
-                        <h> December 1th, 2023 </h>
-                        <p> Vote for us on ModDB's Mod of The Year! </p>
-                        <iframe src="https://www.moddb.com/mods/widget/moty/black-orchestra37-54?year=2023" ></iframe>
-                        <p> P.S. you don't need to be logged in to vote :) </p>
-                    </div>
-
-                    <hr class="divider"> <!-- Divider -->
-
-                    <div class="boxWrapper"> <!-- Blog2 -->
-                        <h> November 30th, 2023 </h>
-                        <p> Welcome to the official Black Orchestra: World Front website </p>
-                        <p> I created this website so that we could have an embed for our ModDB competition as a gag. But then I realized, if I come to this length,
-                            spent actual money on a domain and time sorting all of this out, why shouldn't I do something greater? </p>
-                        <p> Anyway, all of us at the Black Orchestra development team have thought that this was a fun idea, and also an opportunity to be more serious in our development.
-                            We'll see what we can do with this website in the future. Maybe... this place will benefit as a development blog. </p>
-                        <img src="https://files.catbox.moe/turr6a.PNG">
-                        <p> As a starter, here's the German M40 field coat I made a while ago. Well... I guess that's all I'm willing to share. I'm not a blogger. - Hoover </p>
-                    </div>
-
-                </div>
-                <div class="copyright">
-                    <p> © MMXXIII Black Orchestra Team
-                </div>
+        <div class="MediaWrapper">
+            <div class="MediaItem">
+                <a href="https://www.moddb.com/mods/black-orchestra37-54">
+                    <img src="icons/ModDB.svg" alt="ModDB" /> </a>
+                <span class="description">Visit ModDB</span>
+            </div>
+            <div class="MediaItem">
+                <a href="https://www.youtube.com/@BlackOrchestraWorldfront37-54">
+                    <img src="icons/Youtube.svg" alt="Youtube" /> </a>
+                <span class="description">Visit Youtube</span>
+            </div>
+            <div class="MediaItem">
+                <a href="https://discord.gg/black-orchestra-worldfront-37-54-680126209752825867">
+                    <img src="icons/Discord.svg" alt="Youtube" /> </a>
+                <span class="description">Join Discord</span>
             </div>
         </div>
-    </body>
+
+        <!-- <h1 class="Title"> Home </h1> -->
+        
+        <div class="WidgetWrapper">
+            <a class="Widget" href="index.html"> Home </a>
+            <a class="Widget" href="changelog.html"> Changelog </a>
+            <a class="Widget" href="gallery.html"> Gallery </a>
+            <a class="Widget" href="contact.html"> Contact </a>
+        </div>
+
+        <div class="containerStyle1" id="Container1"> <!-- Blog1 -->
+            <div class="boxWrapper">
+                <h> December 1th, 2023 </h>
+                <p> Vote for us on ModDB's Mod of The Year! </p>
+                <iframe src="https://www.moddb.com/mods/widget/moty/black-orchestra37-54?year=2023"></iframe>
+                <p> P.S. you don't need to be logged in to vote :) </p>
+            </div>
+
+            <hr class="divider"> <!-- Divider -->
+
+            <div class="boxWrapper"> <!-- Blog2 -->
+                <h> November 30th, 2023 </h>
+                <p> Welcome to the official Black Orchestra: World Front website </p>
+                <p> I created this website so that we could have an embed for our ModDB competition as a gag. But then I
+                    realized, if I come to this length,
+                    spent actual money on a domain and time sorting all of this out, why shouldn't I do something
+                    greater? </p>
+                <p> Anyway, all of us at the Black Orchestra development team have thought that this was a fun idea, and
+                    also an opportunity to be more serious in our development.
+                    We'll see what we can do with this website in the future. Maybe... this place will benefit as a
+                    development blog. </p>
+                <img src="https://files.catbox.moe/turr6a.PNG">
+                <p> As a starter, here's the German M40 field coat I made a while ago. Well... I guess that's all I'm
+                    willing to share. I'm not a blogger. - Hoover </p>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p> © MMXXIII Black Orchestra Team
+        </div>
+    </div>
+    </div>
+</body>
+
 </html>
