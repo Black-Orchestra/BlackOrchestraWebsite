@@ -1,19 +1,100 @@
+<head>
+    <link rel="stylesheet" href="imageSlider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+</script>
+
 <body>
     <div class="containerStyle1" id="Container1"> <!-- Blog1 -->
+
+        <div class="boxWrapper">
+            <h> December 8th, 2023 </h>
+            <h> Please welcome our Black Orchestra Map Update! </h>
+
+            <p> All maps set in the Mediterranean theatre of war including several Eastern, Western and Pacific front
+                maps are produced by Level Artist/Level Designer North_Dumpling with additional asset assistance from
+                FaNgum. </p>
+
+            <p> While our maps are based on historical battles they take place in, it is not always a smart decision to
+                portray locations in their 1:1 scale as gameplay always comes first for us, so certain liberties are
+                made. </p>
+
+            <p> Each and every map always requires thoughtful design process starting with blockout and finishing with
+                visual polishing. </p>
+
+            <p> Our maps are always made based on specific metrics we have set ourselves such as visuals, geomorphology,
+                location, factions involved and weapons/vehicles used by the teams. </p>
+
+
+            <p> Everything you see currently is WIP and subject to change. </p>
+
+            <h> To see full update please check ModDB. </h>
+            
+            <div class="slideContainer">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img
+                                src="https://media.moddb.com/images/articles/1/322/321441/auto/LerosShowcase_01.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://media.moddb.com/images/articles/1/322/321441/auto/LerosShowcase_02.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://media.moddb.com/images/articles/1/322/321441/auto/LerosShowcase_03.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://media.moddb.com/images/articles/1/322/321441/auto/LerosShowcase_04.png" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+        
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+        
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="divider"> <!-- Divider -->
+
         <div class="boxWrapper">
             <h> December 1th, 2023 </h>
-            <p> Vote for us on ModDB's Mod of The Year! </p>
-            <p> Embed has been removed due to performance issues :(, just click on the ModDB icon above for the link
-            </p>
+            <h> Vote for us on ModDB's Mod of The Year! </h>
+            <h> Embed has been removed due to performance issues :(, just click on the ModDB icon above for the link
+            </h>
             <!-- <iframe src="https://www.moddb.com/mods/widget/moty/black-orchestra37-54?year=2023"></iframe> -->
-            <p> P.S. you don't need to be logged in to vote :) </p>
+            <h> P.S. you don't need to be logged in to vote :) </h>
         </div>
 
         <hr class="divider"> <!-- Divider -->
 
         <div class="boxWrapper"> <!-- Blog2 -->
             <h> November 30th, 2023 </h>
-            <p> Welcome to the official Black Orchestra: World Front website </p>
+            <h> Welcome to the official Black Orchestra: World Front website </h>
             <p> I created this website so that we could have an embed for our ModDB competition as a gag. But then I
                 realized, if I come to this length,
                 spent actual money on a domain and time sorting all of this out, why shouldn't I do something

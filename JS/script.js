@@ -23,9 +23,25 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // Function to inject HTML into a target element
     async function injectHTML(url, targetElement) {
-        const htmlContent = await fetchHTML(url);
-        targetElement.innerHTML = htmlContent;
-    }
+    const htmlContent = await fetchHTML(url);
+    
+    // Create a temporary container element
+    const tempContainer = document.createElement('div');
+    tempContainer.innerHTML = htmlContent;
+
+    // Extract scripts from the temporary container
+    const scripts = tempContainer.querySelectorAll('script');
+    
+    // Append the HTML content to the target element
+    targetElement.innerHTML = tempContainer.innerHTML;
+
+    // Evaluate scripts
+    scripts.forEach(script => {
+        const newScript = document.createElement('script');
+        newScript.innerHTML = script.innerHTML;
+        document.head.appendChild(newScript).parentNode.removeChild(newScript);
+    });
+}
 
     try {
         await injectHTML("pages/mainPage.html", document.getElementById("main"));
@@ -34,9 +50,11 @@ document.addEventListener('DOMContentLoaded', async function () {
         // Delay if needed, or continue with other operations
 
         await injectHTML(yourPage, document.getElementById("container"));
+        
         document.querySelector('.Title').innerHTML = yourTitle;
 
     } catch (error) {
         console.error('Error:', error);
     }
 });
+

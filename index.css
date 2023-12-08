@@ -169,12 +169,12 @@ body {
     background: #000; 
     border: none;
     height: 40rem;
-    width:30rem;
+    width: 30rem;
 }
 
 .boxWrapper {
-    padding-top:40px;
-    padding-bottom:40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: 100%;
     display:flex;
     justify-content: normal;
@@ -183,6 +183,22 @@ body {
     color: aliceblue;
     font-size: 1.5rem;
 }
+
+.boxWrapper p {
+    margin-bottom: 40px;
+    align-self: flex-start;
+}
+.boxWrapper h{
+    margin-bottom: 40px;
+}
+
+.boxWrapper .slideWrapper {
+    width: 90%;
+    height:fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
 
 .rowWrapper { /* Copy of boxWrapper with minor changes*/
     padding-top:10px;
@@ -251,3 +267,6 @@ img {
     opacity: 0.5;
     margin: 2rem;
 }
+
+
+
