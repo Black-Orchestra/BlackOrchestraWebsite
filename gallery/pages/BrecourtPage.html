@@ -1,0 +1,89 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/imageSlider.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+</script>
+
+<body>
+    <div class="containerStyle1" id="Container1"> <!-- Blog1 -->
+
+        <div class="boxWrapper">
+            <h> The Battle of Brecourt, June 6, 1944 </h>
+
+            <p> The Battle of Brecourt Manor was a significant engagement that took place on June 6, 1944, during the
+                D-Day landings in Normandy, France, as part of Operation Overlord in World War II. It was a notable
+                action led by a small unit of American paratroopers from Easy Company, 506th Parachute Infantry
+                Regiment, 101st Airborne Division. </p>
+
+            <p> Tasked with neutralizing German artillery that could potentially threaten the success of the Utah Beach
+                landings, Lieutenant Richard Winters led a group of men from Easy Company to assault the German gun
+                emplacements at Brecourt Manor. The German position consisted of four 105mm howitzers that posed a
+                threat to the advancing Allied forces. </p>
+
+            <p> In a well-coordinated and daring assault, the paratroopers attacked the artillery positions with small
+                arms, grenades, and other explosives. Despite being outnumbered, the Americans utilized superior tactics
+                and surprise to overcome the defenders. The success at Brecourt Manor resulted in the destruction of the
+                German artillery and significantly contributed to the overall success of the Utah Beach landings. </p>
+
+            <p> The Battle of Brecourt Manor showcased the importance of initiative, leadership, and effective
+                small-unit tactics in overcoming well-fortified enemy positions. It also highlighted the bravery and
+                skill of the paratroopers involved in this crucial D-Day mission. The story of Brecourt Manor was later
+                popularized through the book and television miniseries "Band of Brothers," which chronicled the
+                experiences of Easy Company throughout World War II. </p>
+
+            <div class="slideContainer">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1171174344009986158/BrecourtShowcase_02.png"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1171174343145955359/BrecourtShowcase_01.png"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1171174345331195998/BrecourtShowcase_03.png"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1171174346681753693/BrecourtShowcase_04.png"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1171174342042861588/BrecourtShowcase_05.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </div>
+</body>

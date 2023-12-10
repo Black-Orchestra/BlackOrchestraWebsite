@@ -1,0 +1,71 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/imageSlider.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+</script>
+
+<body>
+    <div class="containerStyle1" id="Container1"> <!-- Blog1 -->
+
+        <div class="boxWrapper">
+            <h> The Battle of Horson </h>
+
+            <p> Located in the gulf of Finland, Horson is the UBoat Vesikko's base of operations. The base is built by
+                the Finnish Navy and utilised by Germany during the Continuation War. The base is currently under
+                Kriegmarines operation, backed by a powerful Heer echelon.</p>
+
+            <p> The map features a Soviet naval landing force making an attempt to secure the island. Lend-lease
+                equipments are heavily used in an enviroment they were not designed for. </p>
+
+            <div class="slideContainer">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1170103700023427122/HorsonShowcase_01.png"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1170103700954566737/HorsonShowcase_02.png"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1170103701877313687/HorsonShowcase_03.png"
+                                alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1170103702959435916/HorsonShowcase_04.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+        </div>
+</body>
