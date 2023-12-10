@@ -1,0 +1,68 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/imageSlider.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+</script>
+
+<body>
+    <div class="containerStyle1" id="Container1"> <!-- Blog1 -->
+
+        <div class="boxWrapper">
+            <h> The Battle of Leros, November 1943 </h>
+
+            <p> The Battle of Leros took place during World War II, specifically in November 1943, as part of the larger Dodecanese Campaign in the Aegean Sea. Leros, one of the Greek islands, was strategically important for both the Axis and the Allies. </p>
+
+            <p> The battle involved British and Italian forces on the Allied side, facing German forces. Initially, the Italians had control of Leros, but with the surrender of Italy to the Allies in September 1943, the Germans sought to occupy the island. </p>
+
+            <p> The German attack on Leros began on November 12, 1943, with a series of airborne and seaborne assaults. Despite initial resistance, the Allied forces, consisting of British and Italian troops, couldn't withstand the overwhelming German offensive. The Germans utilized superior air power and naval support to isolate and defeat the defenders. </p>
+
+            <p> By November 16, the Allied garrison on Leros was forced to surrender, marking a significant loss for the Allies in the Eastern Mediterranean. The Battle of Leros contributed to the overall success of the German campaign in the Dodecanese islands, solidifying their control in the region for a brief period during World War II. </p>
+            
+            <div class="slideContainer">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img
+                                src="https://media.moddb.com/images/articles/1/322/321441/auto/LerosShowcase_01.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://media.moddb.com/images/articles/1/322/321441/auto/LerosShowcase_02.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://media.moddb.com/images/articles/1/322/321441/auto/LerosShowcase_03.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://media.moddb.com/images/articles/1/322/321441/auto/LerosShowcase_04.png" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+        
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+        
+                </div>
+            </div>
+        </div>
+</body>

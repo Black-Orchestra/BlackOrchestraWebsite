@@ -1,3 +1,5 @@
+
+
 .overlay {
     position: fixed;
     top: 0;
@@ -178,7 +180,7 @@ body {
     width: 100%;
     display:flex;
     justify-content: normal;
-    flex-direction: column; /* Set flex-direction to column */
+    flex-direction: column;
 	align-items: center;
     color: aliceblue;
     font-size: 1.5rem;
@@ -188,8 +190,21 @@ body {
     margin-bottom: 40px;
     align-self: flex-start;
 }
+
 .boxWrapper h{
     margin-bottom: 40px;
+}
+
+.boxWrapper a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+.boxWrapper a {
+    margin-bottom: 5rem;
+    display:flex;
+    justify-content: normal;
+    flex-direction: column;
+	align-items: center;
 }
 
 .boxWrapper .slideWrapper {

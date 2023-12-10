@@ -1,0 +1,68 @@
+<head>
+    <link rel="stylesheet" href="/imageSlider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+</script>
+
+<body>
+    <div class="containerStyle1" id="Container1"> <!-- Blog1 -->
+
+        <div class="boxWrapper">
+            <h> The Second Battle of El Alamein, October 1942 </h>
+
+            <p> The Second Battle of El Alamein was a crucial World War II engagement that took place in the Egyptian desert from October 23 to November 4, 1942. It was a decisive conflict in the North African Campaign, pitting the Allied Eighth Army, under the command of British General Bernard Montgomery, against the Axis forces led by German Field Marshal Erwin Rommel. </p>
+
+            <p> El Alamein was a strategic location along the Mediterranean coast, and the battle was a turning point in the Western Desert Campaign. The Allies had suffered a series of setbacks in North Africa before this battle, but with the arrival of reinforcements and a change in leadership (Montgomery replaced General Claude Auchinleck), the tide began to turn. </p>
+
+            <p> The battle commenced with a massive artillery barrage by the Allies, followed by a carefully planned infantry and armored assault. Montgomery's Eighth Army successfully outmaneuvered Rommel's forces, overcoming strong Axis defensive positions, minefields, and a lack of resources. The battle was marked by intense tank warfare, with both sides employing armored divisions. </p>
+
+            <p> Ultimately, the Allies emerged victorious at El Alamein, forcing Rommel's Afrika Korps into a retreat. The battle had significant implications, halting the Axis advance in North Africa and putting them on the defensive. The success at El Alamein boosted Allied morale, opened up the possibility of an invasion of Italy, and marked a turning point in the broader war in the Mediterranean and the Middle East. </p>
+            
+            <div class="slideContainer">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1176670186045186148/DiscordShowcaseElAlamein_01.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1176670188263972944/DiscordShowcaseElAlamein_03.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1176670189421613146/DiscordShowcaseElAlamein_04.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img
+                                src="https://cdn.discordapp.com/attachments/805425931153834015/1176670190436630579/DiscordShowcaseElAlamein_05.png" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+        
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+        
+                </div>
+            </div>
+        </div>
+</body>
