@@ -1,17 +1,17 @@
 // script.js
 
-function fadeOut() {
-    document.body.classList.add('fade-out');
-
-    // Remove the overlay after fading in
-    var overlay = document.querySelector('.overlay');
-    overlay.addEventListener('transitionend', function () {
-        overlay.remove();
-    });
-}
-
 document.addEventListener('DOMContentLoaded', async function () {
 
+    function fadeOut() {
+        document.body.classList.add('fade-out');
+    
+        // Remove the overlay after fading in
+        var overlay = document.querySelector('.overlay');
+        overlay.addEventListener('transitionend', function () {
+            overlay.remove();
+        });
+    }
+    
     // Function to fetch HTML content from a URL
     async function fetchHTML(url) {
         const response = await fetch(url);
