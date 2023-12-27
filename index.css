@@ -214,6 +214,10 @@ body {
     overflow: hidden;
 }
 
+.boxWrapper img {
+    margin-bottom: 40px;
+}
+
 
 .rowWrapper { /* Copy of boxWrapper with minor changes*/
     padding-top:10px;
