@@ -218,6 +218,9 @@ body {
     margin-bottom: 40px;
 }
 
+.swiper-slide img { /* Necessary to not inherit the margin of the parents*/
+    margin-bottom: 0px;
+}
 
 .rowWrapper { /* Copy of boxWrapper with minor changes*/
     padding-top:10px;
