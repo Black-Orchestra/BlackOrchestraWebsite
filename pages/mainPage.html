@@ -5,7 +5,7 @@
 <body onload="">
     <div class="main">
         <p class="banner">
-            <img src="/images/black_orchestra_logo.png">
+            <img src="/images/black_orchestra_logo_lowres.png" data-src="/images/black_orchestra_logo.png" onload="loadHighResImage(this)">
         </p>
 
         <div class="MediaWrapper">
@@ -43,5 +43,19 @@
     </div>
     </div>
 </body>
+
+<script>
+    function loadHighResImage(img) {
+        const highResSrc = img.getAttribute('data-src');
+        const highResImg = new Image();
+        
+        highResImg.onload = function () {
+            img.src = highResSrc;
+            img.classList.add('loaded');
+        };
+        
+        highResImg.src = highResSrc;
+    }
+</script>
 
 </html>

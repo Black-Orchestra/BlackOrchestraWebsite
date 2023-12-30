@@ -51,7 +51,13 @@ body {
 .banner img {
     margin-top:40%;
     margin-bottom:40%;
-    min-width: 20em;
+    width: 100%;
+    filter: blur(20px); /* Add a blur effect to the low-resolution image */
+    transition: filter 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.banner img.loaded {
+    filter: blur(0); /* Remove the blur effect for the high-resolution image */
 }
 
 .MediaWrapper {
