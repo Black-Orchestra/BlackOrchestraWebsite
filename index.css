@@ -48,17 +48,23 @@ body {
     --spacing: 3rem;
 }
 
-.banner img {
-    margin-top:40%;
-    margin-bottom:40%;
+.banner {
+    position: relative;
     width: 100%;
-    filter: blur(20px); /* Add a blur effect to the low-resolution image */
-    transition: filter 0.3s ease-in-out; /* Add a smooth transition effect */
+    min-width: 20em;
+    max-width: 100em;
+    margin-top:20%;
+    margin-bottom:20%;
 }
 
-.banner img.loaded {
-    filter: blur(0); /* Remove the blur effect for the high-resolution image */
+.banner {
+    width: 100%;
 }
+
+.banner img {
+    width: 100%;
+}
+
 
 .MediaWrapper {
     box-sizing: border-box;
