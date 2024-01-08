@@ -183,7 +183,6 @@ body {
 
 .boxWrapper {
     margin-top: 40px;
-    margin-bottom: 40px;
     width: 100%;
     display:flex;
     justify-content: normal;
@@ -198,7 +197,7 @@ body {
     align-self: flex-start;
 }
 
-.boxWrapper h{
+.boxWrapper h {
     margin-bottom: 40px;
 }
 
@@ -240,6 +239,7 @@ body {
     color: aliceblue;
     font-size: 1.5rem;
 }
+
 
 .divider {
     border: 1px solid rgba(255,255,255,0.271); /* Set border properties */

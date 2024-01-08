@@ -16,6 +16,7 @@ body {
     border-radius: 0px;
     overflow: hidden;
     transition: border-radius 0.1s ease;
+    margin-bottom: 40px;
 }
 .slideContainer:hover {
     border-radius: 30px;

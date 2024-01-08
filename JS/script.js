@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 }
 
     try {
-        await injectHTML("../pages/mainPage.html", document.getElementById("main"));
+        await injectHTML("/pages/mainPage.html", document.getElementById("main"));
         fadeOut();
 
         // Delay if needed, or continue with other operations
@@ -58,4 +58,4 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 });
 
-document.write('<script src="../JS/swiper-bundle.min.js"></script>');
+document.write('<script src="/JS/swiper-bundle.min.js"></script>');
