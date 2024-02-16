@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE squad SYSTEM "squad.dtd">
+<?xml-stylesheet href="squad.xsl" type="text/xsl"?>
+<squad nick="HFKR">
+	<name>HorseFuckers</name>
+	<email></email>
+	<web>https://www.blackorchestra.net/</web>
+	<picture></picture>
+	<title>HFKR</title>
+	<member id="" nick="Hoover">
+		<name>Hoover</name>
+		<email></email>
+		<icq></icq>
+		<remark>loves ponut and penis equally</remark>
+	</member>
+</squad>
