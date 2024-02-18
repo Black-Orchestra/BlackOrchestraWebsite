@@ -47,9 +47,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         await injectHTML("/pages/mainPage.html", document.getElementById("main"));
         fadeOut();
 
-        // Delay if needed, or continue with other operations
-
-        await injectHTML(yourPage, document.getElementById("container"));
+        if (yourPage != "") // 404'd     
+            await injectHTML(yourPage, document.getElementById("container"));
         
         document.querySelector('.Title').innerHTML = yourTitle;
 
