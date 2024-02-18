@@ -55,13 +55,16 @@ body {
     max-width: 100em;
     margin-top:20%;
     margin-bottom:20%;
+    min-height:20rem;
 }
 
 .banner img {
+    position: absolute;
     width: 100%;
 }
 
 .MediaWrapper {
+    top:1000px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
