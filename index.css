@@ -177,6 +177,10 @@ body {
     --padding-vertical: 3rem;
 }
 
+.containerStyle1 a {
+    max-width:100%
+}
+
 .containerStyle1 iframe {
     background: #000; 
     border: none;
