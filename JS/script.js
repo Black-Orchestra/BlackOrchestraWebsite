@@ -56,5 +56,3 @@ document.addEventListener('DOMContentLoaded', async function () {
         console.error('Error:', error);
     }
 });
-
-document.write('<script src="/JS/swiper-bundle.min.js"></script>');
