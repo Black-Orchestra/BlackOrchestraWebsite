@@ -1,0 +1,65 @@
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/imageSlider.css">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+</script>
+
+<body>
+    <div class="containerStyle1" id="Container1"> <!-- Blog1 -->
+
+        <div class="boxWrapper">
+            <h> The Battle of Biblio Hill, August 5, 1943 </h>
+
+            <p> Bibilo Hill was strategically significant because it provided a commanding view of the Munda airstrip.
+                After heavy fighting, U.S. forces captured the hill, which allowed them to establish control over the
+                airfield and use it as a base for further operations against Japanese positions in the Northern
+                Solomons. The capture of Munda and Bibilo Hill was a critical step in the Allied advance, facilitating
+                subsequent operations, including the push towards Bougainville​. </p>
+
+            <div class="slideContainer">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="/images/BibiloShowcase_01.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="/images/BibiloShowcase_02.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="/images/BibiloShowcase_03.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="/images/BibiloShowcase_04.png" alt="">
+                        </div>
+                        <div class="swiper-slide"><img src="/images/BibiloShowcase_05.png" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+            </div>
+            <h> Author: North_Dumpling </h>
+        </div>
+</body>
