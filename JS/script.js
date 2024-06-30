@@ -52,7 +52,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         
         document.querySelector('.Title').innerHTML = yourTitle;
 
-    } catch (error) {
+    } catch (error) 
+    {
         console.error('Error:', error);
     }
+    
+    document.write('<script src="/JS/swiper-bundle.min.js"></script>');
 });
