@@ -1,3 +1,3 @@
-[www.b](https://www.blackorchestra.net/)
+[Access our website](https://www.blackorchestra.net/)
 
 Using GitHub page to host our static front-ends.
